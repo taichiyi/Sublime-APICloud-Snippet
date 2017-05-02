@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+api.showProgress({
+    title: '${1: title}',
+    text: '${2: text}',
+    modal: ${3: true}
+});
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>api-showProgress</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>显示进度提示框</description>
+</snippet>
