@@ -1,11 +1,12 @@
 <snippet>
     <content><![CDATA[
-api.pageDown(function(ret,err){
-    if (!ret.scrolled){
-        api.alert({
-            msg:'已经滚动到底部了'
-        });
+api.pageDown({
+    bottom: ${1:false}
+}, function(ret, err) {
+    if (!ret.scrolled) {
+        ${2:// 已经滚动到底部了}
     }
+    ${3}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
