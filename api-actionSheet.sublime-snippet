@@ -1,14 +1,17 @@
 <snippet>
     <content><![CDATA[
+var buttons = ['${2}'];
 api.actionSheet({
     title: '${1:title}',
-    cancelTitle: '${2:cancelTitle}',
-    destructiveTitle: '${3:destructivetitle}',
-    buttons: ['1', '2', '3']
-},function(ret,err){
-    api.alert({
-        msg: '你刚点击了'+ret.buttonIndex
-    });
+    buttons: buttons,
+    style: {
+        itemPressColor: '#E1E1E1',
+    },
+},function(ret, err){
+    var index = ret.buttonIndex;
+    if (buttons.length === index - 1) {
+        return false;
+    }
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
