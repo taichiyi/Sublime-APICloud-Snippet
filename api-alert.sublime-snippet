@@ -2,7 +2,10 @@
     <content><![CDATA[
 api.alert({
     title: '${1:title}', 
-    msg: '${2:msg_content}'
+    msg: '${2:msg_content}',
+    buttons: ${3:["确定"]}
+}, function(ret) {
+	${4}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
