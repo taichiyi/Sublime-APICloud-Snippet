@@ -3,9 +3,9 @@
 api.closeToWin({
     name: '${1:window_name}',
     animation: {
-        type: 'flip',
-        subType: 'from_bottom',
-        duration: 500
+        type: 'none',
+        subType: 'from_right',
+        duration: 0
     }
 });
 ]]></content>

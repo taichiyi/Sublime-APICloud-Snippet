@@ -1,13 +1,10 @@
 <snippet>
     <content><![CDATA[
 api.getPrefs({
-    key: '${1:prefs_key}'
-}, function(ret, err){
-    var v = ret.value;
-    if ( v === '' ) {
-        // 不存在该变量
-    } else {
-    }
+    key: api.frameName + 'Params',
+}, function(ret, err) {
+    var params = JSON.parse(ret.value);
+    ${1:}
 });
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
